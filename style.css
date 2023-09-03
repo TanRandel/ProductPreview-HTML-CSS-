@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 45rem;
+  max-width: 60rem;
+  margin: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.075);
+
+  overflow: hidden;
+
+  border-radius: 10px;
+}
+
+.image-container {
+  background-image: url(image-product-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  /* height: 100%; */
+}
+
+.textholder {
+  padding: 3.2rem;
+  /* display: grid; */
+  /* gap: 1rem; */
+}
+h1 {
+  
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: "Fraunces", serif;
+  font-size: 3.2rem;
+  font-size: 700;
+  line-height: 3.2rem;
+  color: hsl(212, 21%, 14%);
+  margin-bottom: 24px;
+}
+
+p {
+  font-size: 1.4rem;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  line-height: 2.3rem;
+  margin-bottom: 2.8rem;
+}
+.price-container {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 3rem;
+}
+.price {
+  font-size: 3rem;
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+}
+.discount {
+  font-size: 1.3rem;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.7rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 0.8rem;
+  border: none;
+  gap: 0.625rem;
+
+  padding: 1.5rem 6.2rem;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+button:hover,
+button:active {
+  background-color: hsl(158, 56%, 20%);
+  color: hsl(0, 0%, 100%);
+}
+
+/* mobile layout (below 376 px) */
+@media screen and (min-width: 20em) and (max-width: 31.25em) {
+  .container {
+    height: 90vh;
+    width: 90vw;
+
+    grid-template-rows: 1fr 1.1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .image-container {
+    background-image:url(image-product-mobile.jpg);
+    height: 100%;
+    width: 90vw;
+    background-size: cover;
+  }
+
+  .textholder {
+    width: 90vw;
+    padding: 2rem 2rem 0 2rem;
+    margin-bottom: 2rem;
+  }
+
+  button {
+    width: 100%;
+    justify-content: center;
+  }
+}
