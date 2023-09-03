@@ -32,7 +32,7 @@ Users should be able to:
 ![Alt text](image-1.png)
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/TanRandel/ProductPreview-HTML-CSS-.git]
 - Live Site URL: [https://tanrandel.github.io/ProductPreview-HTML-CSS-/]
 
 ## My process
